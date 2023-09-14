@@ -14,6 +14,8 @@
 ## Entità
 
 ```
+# Sono presenti in dashboard quando sono libere
+# raggruppate in trip quando legate ai trip
 Booking(
     service: 'flight' | 'hotel' | 'car'
     startDateTime: date
@@ -26,6 +28,7 @@ Booking(
     owner: User
 )
 
+# Trip è un raggruppamento opzionale
 Trip(
     startDate: date
     endDate: date
@@ -63,9 +66,3 @@ User(
 )
 ```
 
-```mermaid
-sequenceDiagram
-    Alice->>John: Hello John, how are you?
-    John-->>Alice: Great!
-    Alice-)John: See you later!
-```
